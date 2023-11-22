@@ -8,6 +8,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
+                'inter': ['"Inter"', 'sans-serif'],
                 'ibm-plex-mono': ['"IBM Plex Mono"', 'monospace'],
             }
         },
