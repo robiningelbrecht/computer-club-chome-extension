@@ -9,13 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
 </head>
-<body>
-<div class="min-h-screen antialiased bg-gray-50 dark:bg-gray-900 font-inter">
+<body class="bg-gray-50 dark:bg-gray-900">
+<div class="min-h-screen antialiased font-inter">
     <nav class="bg-cc-blue text-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
         <div class="flex flex-wrap items-center justify-between">
             <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="images/logo.png" class="h-8" alt="ComputerClub"/>
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white font-ibm-plex-mono">Startpagina</span>
             </a>
             <div>
                 <button id="theme-toggle" type="button"
@@ -33,7 +32,7 @@
             </div>
         </div>
     </nav>
-    <main class="p-4 pt-20 text-gray-900 dark:text-white">
+    <main class="p-4 pt-20 mb-[45px] text-gray-900 dark:text-white">
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
             <div class="md:col-span-2">
                 <div class="p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
@@ -43,8 +42,8 @@
                         </h3>
                         <div>
                             <a href="https://computerclub.forum"
-                               class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
-                                Alle berichten bekijken
+                               class="text-sm font-medium text-cc-blue hover:underline dark:text-blue-500">
+                                alle berichten bekijken
                             </a>
                         </div>
                     </div>
@@ -52,7 +51,7 @@
                         <ul class="flex flex-wrap -mb-px">
                             <li class="me-2">
                                 <a href="#"
-                                   class="inline-block p-2 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500"
+                                   class="inline-block p-2 text-cc-blue border-b-2 border-cc-blue rounded-t-lg active dark:text-blue-500 dark:border-blue-500"
                                    aria-current="page">Nieuwste</a>
                             </li>
                             <li class="me-2">
@@ -67,7 +66,7 @@
                                 <a href="#">
                                     <div class="flex items-center gap-x-1">
                                         <div class="flex-1 min-w-0">
-                                            <p class="mb-1 text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                            <p class="mb-1 text-sm font-medium text-gray-900 truncate dark:text-white">
                                                 💡 Tips om het forum te volgen, met een zeer lange titel, ihihihi
                                             </p>
                                             <div class="flex gap-x-1 items-center text-xs text-gray-500 truncate dark:text-gray-400">
@@ -110,7 +109,7 @@
                                 <a href="#">
                                     <div class="flex items-center gap-x-1">
                                         <div class="flex-1 min-w-0">
-                                            <p class="mb-1 text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                            <p class="mb-1 text-sm font-medium text-gray-900 truncate dark:text-white">
                                                 💡 Tips om het forum te volgen, met een zeer lange titel, ihihihi
                                             </p>
                                             <div class="flex gap-x-1 items-center text-xs text-gray-500 truncate dark:text-gray-400">
@@ -153,7 +152,50 @@
                                 <a href="#">
                                     <div class="flex items-center gap-x-1">
                                         <div class="flex-1 min-w-0">
-                                            <p class="mb-1 text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                            <p class="mb-1 text-sm font-medium text-gray-900 truncate dark:text-white">
+                                                💡 Tips om het forum te volgen, met een zeer lange titel, ihihihi
+                                            </p>
+                                            <div class="flex gap-x-1 items-center text-xs text-gray-500 truncate dark:text-gray-400">
+                                                <img class="w-6 h-6 rounded-full"
+                                                     src="https://computerclub.forum/user_avatar/computerclub.forum/freddy/64/6_2.png"
+                                                     alt="Neil image">
+                                                <div>Freddy</div>
+                                                <div>·</div>
+                                                <div>20 nov</div>
+                                                <div>·</div>
+                                                <div>10 comments</div>
+                                                <div>·</div>
+                                                <div class="flex items-center before:inline-block before:content-[''] before:bg-[#0432ff] before:w-1 before:h-1 before:mr-[0.15rem]">
+                                                    Forum updates/feedback
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-flex items-center">
+                                            <img class="w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
+                                                 src="https://computerclub.forum/user_avatar/computerclub.forum/freddy/64/6_2.png"
+                                                 alt="Neil image">
+                                            <img class="-ml-3 w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
+                                                 src="https://computerclub.forum//user_avatar/computerclub.forum/robin/64/49_2.png"
+                                                 alt="Neil image">
+                                            <img class="-ml-3 w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
+                                                 src="https://computerclub.forum//user_avatar/computerclub.forum/robin/64/49_2.png"
+                                                 alt="Neil image">
+                                            <img class="-ml-3 w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
+                                                 src="https://computerclub.forum//user_avatar/computerclub.forum/robin/64/49_2.png"
+                                                 alt="Neil image">
+                                            <img class="-ml-3 w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
+                                                 src="https://computerclub.forum//user_avatar/computerclub.forum/robin/64/49_2.png"
+                                                 alt="Neil image">
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="py-3 sm:py-3">
+                                <a href="#">
+                                    <div class="flex items-center gap-x-1">
+                                        <div class="flex-1 min-w-0">
+                                            <p class="mb-1 text-sm font-medium text-gray-900 truncate dark:text-white">
                                                 💡 Tips om het forum te volgen, met een zeer lange titel, ihihihi
                                             </p>
                                             <div class="flex gap-x-1 items-center text-xs text-gray-500 truncate dark:text-gray-400">
@@ -193,47 +235,19 @@
                                 </a>
                             </li>
                             <li class="pt-3 pb-0 sm:pt-3">
-                                <a href="#">
-                                    <div class="flex items-center gap-x-1">
-                                        <div class="flex-1 min-w-0">
-                                            <p class="mb-1 text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
-                                                💡 Tips om het forum te volgen, met een zeer lange titel, ihihihi
-                                            </p>
-                                            <div class="flex gap-x-1 items-center text-xs text-gray-500 truncate dark:text-gray-400">
-                                                <img class="w-6 h-6 rounded-full"
-                                                     src="https://computerclub.forum/user_avatar/computerclub.forum/freddy/64/6_2.png"
-                                                     alt="Neil image">
-                                                <div>Freddy</div>
-                                                <div>·</div>
-                                                <div>20 nov</div>
-                                                <div>·</div>
-                                                <div>10 comments</div>
-                                                <div>·</div>
-                                                <div class="flex items-center before:inline-block before:content-[''] before:bg-[#0432ff] before:w-1 before:h-1 before:mr-[0.15rem]">
-                                                    Forum updates/feedback
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="inline-flex items-center">
-                                            <img class="w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
-                                                 src="https://computerclub.forum/user_avatar/computerclub.forum/freddy/64/6_2.png"
-                                                 alt="Neil image">
-                                            <img class="-ml-3 w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
-                                                 src="https://computerclub.forum//user_avatar/computerclub.forum/robin/64/49_2.png"
-                                                 alt="Neil image">
-                                            <img class="-ml-3 w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
-                                                 src="https://computerclub.forum//user_avatar/computerclub.forum/robin/64/49_2.png"
-                                                 alt="Neil image">
-                                            <img class="-ml-3 w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
-                                                 src="https://computerclub.forum//user_avatar/computerclub.forum/robin/64/49_2.png"
-                                                 alt="Neil image">
-                                            <img class="-ml-3 w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
-                                                 src="https://computerclub.forum//user_avatar/computerclub.forum/robin/64/49_2.png"
-                                                 alt="Neil image">
-
+                                <div class="flex items-center gap-x-1 animate-pulse">
+                                    <div class="flex-1 min-w-0">
+                                        <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-[90%] mb-2.5"></div>
+                                        <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                                    </div>
+                                    <div class="inline-flex items-center">
+                                        <div class="text-gray-300 dark:text-gray-700">
+                                            <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+                                            </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -247,7 +261,7 @@
                         </h3>
                         <div>
                             <a href="https://computerclub.online/afleveringen"
-                               class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                               class="text-sm font-medium text-cc-blue hover:underline dark:text-blue-500">
                                 alle afleveringen
                             </a>
                         </div>
@@ -257,10 +271,10 @@
                             <li class="py-3 sm:py-3">
                                 <a href="#">
                                     <div class="mb-1 flex items-center justify-between">
-                                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                        <p class="flex-1 min-w-0 text-sm font-medium text-gray-900 truncate dark:text-white mr-1">
                                             #277 - Digidates en pindrukken
                                         </p>
-                                        <div class="text-xs text-gray-500 truncate dark:text-gray-400">20 nov</div>
+                                        <div class="text-xs text-gray-500 dark:text-gray-400">20 nov</div>
                                     </div>
                                     <div class="flex items-center gap-x-1">
                                         <img class="w-16"
@@ -275,10 +289,10 @@
                             <li class="py-3 sm:py-3">
                                 <a href="#">
                                     <div class="mb-1 flex items-center justify-between">
-                                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                        <p class="flex-1 min-w-0 text-sm font-medium text-gray-900 truncate dark:text-white mr-1">
                                             #277 - Digidates en pindrukken
                                         </p>
-                                        <div class="text-xs text-gray-500 truncate dark:text-gray-400">20 nov</div>
+                                        <div class="text-xs text-gray-500 dark:text-gray-400">20 nov</div>
                                     </div>
                                     <div class="flex items-center gap-x-1">
                                         <img class="w-16"
@@ -293,10 +307,10 @@
                             <li class="py-3 sm:py-3">
                                 <a href="#">
                                     <div class="mb-1 flex items-center justify-between">
-                                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                        <p class="flex-1 min-w-0 text-sm font-medium text-gray-900 truncate dark:text-white mr-1">
                                             #277 - Digidates en pindrukken
                                         </p>
-                                        <div class="text-xs text-gray-500 truncate dark:text-gray-400">20 nov</div>
+                                        <div class="text-xs text-gray-500 dark:text-gray-400">20 nov</div>
                                     </div>
                                     <div class="flex items-center gap-x-1">
                                         <img class="w-16"
@@ -308,13 +322,13 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="pt-3 pb-0 sm:pt-3">
+                            <li class="py-3 sm:py-3">
                                 <a href="#">
                                     <div class="mb-1 flex items-center justify-between">
-                                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                        <p class="flex-1 min-w-0 text-sm font-medium text-gray-900 truncate dark:text-white mr-1">
                                             #277 - Digidates en pindrukken
                                         </p>
-                                        <div class="text-xs text-gray-500 truncate dark:text-gray-400">20 nov</div>
+                                        <div class="text-xs text-gray-500 dark:text-gray-400">20 nov</div>
                                     </div>
                                     <div class="flex items-center gap-x-1">
                                         <img class="w-16"
@@ -325,6 +339,22 @@
                                         </p>
                                     </div>
                                 </a>
+                            </li>
+                            <li class="pt-3 pb-0 sm:pt-3 animate-pulse">
+                                    <div class="mb-1 flex items-center justify-between">
+                                        <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full mb-2.5"></div>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <div class="rounded">
+                                            <svg class="w-16 h-12 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                                                <path d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="w-full">
+                                            <div class="w-full h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                                            <div class="w-full h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                                        </div>
+                                    </div>
                             </li>
                         </ul>
                     </div>
@@ -338,8 +368,8 @@
                         </h3>
                         <div>
                             <a href="https://computerclub.online/afleveringen"
-                               class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
-                                Inschrijven
+                               class="text-sm font-medium text-cc-blue hover:underline dark:text-blue-500">
+                                inschrijven
                             </a>
                         </div>
                     </div>
@@ -348,14 +378,12 @@
                             <li class="py-3 sm:py-3">
                                 <a href="#">
                                     <div class="mb-1 flex items-center justify-between">
-                                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                        <p class="flex-1 min-w-0 text-sm font-medium text-gray-900 truncate dark:text-white mr-1">
                                             #277 - Digidates en pindrukken
                                         </p>
-                                        <div class="text-xs text-gray-500 truncate dark:text-gray-400">20 nov</div>
+                                        <div class="text-xs text-gray-500 dark:text-gray-400">20 nov</div>
                                     </div>
                                     <div class="flex items-center gap-x-1">
-                                        <img class="w-16"
-                                             src="https://images.squarespace-cdn.com/content/v1/5ee79e74c6eadb5eab57c7f6/1700051024262-IBV0EHXDMT3TNHNI1VYV/277_dating_site.png?format=1500w">
                                         <p>
                                             Toen Bill en Freddi Strauss zich in 1995 registreerden voor een unieke
                                             website...
@@ -366,14 +394,12 @@
                             <li class="py-3 sm:py-3">
                                 <a href="#">
                                     <div class="mb-1 flex items-center justify-between">
-                                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                        <p class="flex-1 min-w-0 text-sm font-medium text-gray-900 truncate dark:text-white mr-1">
                                             #277 - Digidates en pindrukken
                                         </p>
-                                        <div class="text-xs text-gray-500 truncate dark:text-gray-400">20 nov</div>
+                                        <div class="text-xs text-gray-500 dark:text-gray-400">20 nov</div>
                                     </div>
                                     <div class="flex items-center gap-x-1">
-                                        <img class="w-16"
-                                             src="https://images.squarespace-cdn.com/content/v1/5ee79e74c6eadb5eab57c7f6/1700051024262-IBV0EHXDMT3TNHNI1VYV/277_dating_site.png?format=1500w">
                                         <p>
                                             Toen Bill en Freddi Strauss zich in 1995 registreerden voor een unieke
                                             website...
@@ -384,14 +410,12 @@
                             <li class="py-3 sm:py-3">
                                 <a href="#">
                                     <div class="mb-1 flex items-center justify-between">
-                                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                        <p class="flex-1 min-w-0 text-sm font-medium text-gray-900 truncate dark:text-white mr-1">
                                             #277 - Digidates en pindrukken
                                         </p>
-                                        <div class="text-xs text-gray-500 truncate dark:text-gray-400">20 nov</div>
+                                        <div class="text-xs text-gray-500 dark:text-gray-400">20 nov</div>
                                     </div>
                                     <div class="flex items-center gap-x-1">
-                                        <img class="w-16"
-                                             src="https://images.squarespace-cdn.com/content/v1/5ee79e74c6eadb5eab57c7f6/1700051024262-IBV0EHXDMT3TNHNI1VYV/277_dating_site.png?format=1500w">
                                         <p>
                                             Toen Bill en Freddi Strauss zich in 1995 registreerden voor een unieke
                                             website...
@@ -399,23 +423,29 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="pt-3 pb-0 sm:pt-3">
+                            <li class="py-3 sm:py-3">
                                 <a href="#">
                                     <div class="mb-1 flex items-center justify-between">
-                                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                        <p class="flex-1 min-w-0 text-sm font-medium text-gray-900 truncate dark:text-white mr-1">
                                             #277 - Digidates en pindrukken
                                         </p>
-                                        <div class="text-xs text-gray-500 truncate dark:text-gray-400">20 nov</div>
+                                        <div class="text-xs text-gray-500 dark:text-gray-400">20 nov</div>
                                     </div>
                                     <div class="flex items-center gap-x-1">
-                                        <img class="w-16"
-                                             src="https://images.squarespace-cdn.com/content/v1/5ee79e74c6eadb5eab57c7f6/1700051024262-IBV0EHXDMT3TNHNI1VYV/277_dating_site.png?format=1500w">
                                         <p>
                                             Toen Bill en Freddi Strauss zich in 1995 registreerden voor een unieke
                                             website...
                                         </p>
                                     </div>
                                 </a>
+                            </li>
+                            <li class="pt-3 pb-0 sm:pt-3 animate-pulse">
+                                    <div class="mb-1 flex items-center justify-between">
+                                        <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full mb-2.5"></div>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <div class="w-full h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                                    </div>
                             </li>
                         </ul>
                     </div>
@@ -423,7 +453,7 @@
             </div>
         </div>
     </main>
-    <footer class="font-ibm-plex-mono fixed bottom-0 left-0 z-20 w-full bg-cc-blue border-t border-gray-200 shadow flex items-center justify-center p-4 dark:bg-gray-800 dark:border-gray-600">
+    <footer class="font-ibm-plex-mono fixed bottom-0 left-0 z-20 w-full bg-cc-blue border-t border-gray-200 shadow flex items-center justify-center p-3 dark:bg-gray-800 dark:border-gray-600">
         <ul class="flex flex-wrap items-center text-sm font-medium text-white dark:text-gray-400">
             <li>
                 <a href="https://computerclub.online" class="hover:underline me-4 md:me-6">Site</a>
@@ -438,7 +468,7 @@
                 <a href="https://computerclub.online/shop" class="hover:underline me-4 md:me-6">Shop</a>
             </li>
             <li>
-                <a href="https://computerclub.online/vriend-van-de-show" class="hover:underline me-4 md:me-6">Vrienden</a>
+                <a href="https://vrienden.computerclub.online" class="hover:underline me-4 md:me-6">Vrienden</a>
             </li>
             <li>
                 <a href="https://computerclub.world/" class="hover:underline">World</a>
