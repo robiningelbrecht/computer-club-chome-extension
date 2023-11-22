@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Computer club",
-  "description": "Computer club new tab",
+  "name": "Computer club: Startpagina",
+  "description": "Startpagina voor ComputerClub. Een wekelijkse podcast over technologie.",
   "version": "0.0.0.1",
   "icons": {
     "16": "images/icon-16.png",
@@ -14,5 +14,6 @@
   },
   "permissions": [
     "storage"
-  ]
+  ],
+  "host_permissions": ["https://computerclub.forum/*", "https://feeds.soundcloud.com/*"]
 }
