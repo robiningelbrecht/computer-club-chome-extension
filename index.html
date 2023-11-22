@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>ComputerClub</title>
+    <title>Computer Club - Startpagina</title>
     <link href="tailwind.min.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,15 +11,15 @@
 </head>
 <body>
 <div class="min-h-screen antialiased bg-gray-50 dark:bg-gray-900 font-inter">
-    <nav class="bg-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
+    <nav class="bg-cc-blue text-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
         <div class="flex flex-wrap items-center justify-between">
             <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="images/logo.png" class="h-8" alt="ComputerClub"/>
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white font-ibm-plex-mono">ComputerClub - Startpagina</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white font-ibm-plex-mono">Startpagina</span>
             </a>
             <div>
                 <button id="theme-toggle" type="button"
-                        class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                        class="text-white dark:text-gray-400 hover:bg-[#2c3afc] dark:hover:bg-gray-700 rounded-lg text-sm p-2.5">
                     <svg id="theme-toggle-dark-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
                          xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
@@ -34,8 +34,8 @@
         </div>
     </nav>
     <main class="p-4 pt-20 text-gray-900 dark:text-white">
-        <div class="grid grid-cols-1 xl:grid-cols-3 gap-4">
-            <div class="col-span-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+            <div class="md:col-span-2">
                 <div class="p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
                     <div class="flex items-center justify-between mb-1">
                         <h3 class="text-lg font-semibold font-ibm-plex-mono">
@@ -44,7 +44,7 @@
                         <div>
                             <a href="https://computerclub.forum"
                                class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
-                                All posts
+                                Alle berichten bekijken
                             </a>
                         </div>
                     </div>
@@ -53,11 +53,11 @@
                             <li class="me-2">
                                 <a href="#"
                                    class="inline-block p-2 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500"
-                                   aria-current="page">Newest</a>
+                                   aria-current="page">Nieuwste</a>
                             </li>
                             <li class="me-2">
                                 <a href="#"
-                                   class="inline-block p-2 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Popular</a>
+                                   class="inline-block p-2 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Populair</a>
                             </li>
                         </ul>
                     </div>
@@ -239,16 +239,107 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full col-span-1">
+            <div class="md:col-span-1">
                 <div class="p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
                     <div class="flex items-center justify-between mb-1">
                         <h3 class="text-lg font-semibold font-ibm-plex-mono">
-                            Podcast episodes
+                            Podcast
                         </h3>
                         <div>
                             <a href="https://computerclub.online/afleveringen"
                                class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
-                                All episodes
+                                alle afleveringen
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flow-root">
+                        <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                            <li class="py-3 sm:py-3">
+                                <a href="#">
+                                    <div class="mb-1 flex items-center justify-between">
+                                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                            #277 - Digidates en pindrukken
+                                        </p>
+                                        <div class="text-xs text-gray-500 truncate dark:text-gray-400">20 nov</div>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img class="w-16"
+                                             src="https://images.squarespace-cdn.com/content/v1/5ee79e74c6eadb5eab57c7f6/1700051024262-IBV0EHXDMT3TNHNI1VYV/277_dating_site.png?format=1500w">
+                                        <p>
+                                            Toen Bill en Freddi Strauss zich in 1995 registreerden voor een unieke
+                                            website...
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="py-3 sm:py-3">
+                                <a href="#">
+                                    <div class="mb-1 flex items-center justify-between">
+                                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                            #277 - Digidates en pindrukken
+                                        </p>
+                                        <div class="text-xs text-gray-500 truncate dark:text-gray-400">20 nov</div>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img class="w-16"
+                                             src="https://images.squarespace-cdn.com/content/v1/5ee79e74c6eadb5eab57c7f6/1700051024262-IBV0EHXDMT3TNHNI1VYV/277_dating_site.png?format=1500w">
+                                        <p>
+                                            Toen Bill en Freddi Strauss zich in 1995 registreerden voor een unieke
+                                            website...
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="py-3 sm:py-3">
+                                <a href="#">
+                                    <div class="mb-1 flex items-center justify-between">
+                                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                            #277 - Digidates en pindrukken
+                                        </p>
+                                        <div class="text-xs text-gray-500 truncate dark:text-gray-400">20 nov</div>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img class="w-16"
+                                             src="https://images.squarespace-cdn.com/content/v1/5ee79e74c6eadb5eab57c7f6/1700051024262-IBV0EHXDMT3TNHNI1VYV/277_dating_site.png?format=1500w">
+                                        <p>
+                                            Toen Bill en Freddi Strauss zich in 1995 registreerden voor een unieke
+                                            website...
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="pt-3 pb-0 sm:pt-3">
+                                <a href="#">
+                                    <div class="mb-1 flex items-center justify-between">
+                                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white font-ibm-plex-mono">
+                                            #277 - Digidates en pindrukken
+                                        </p>
+                                        <div class="text-xs text-gray-500 truncate dark:text-gray-400">20 nov</div>
+                                    </div>
+                                    <div class="flex items-center gap-x-1">
+                                        <img class="w-16"
+                                             src="https://images.squarespace-cdn.com/content/v1/5ee79e74c6eadb5eab57c7f6/1700051024262-IBV0EHXDMT3TNHNI1VYV/277_dating_site.png?format=1500w">
+                                        <p>
+                                            Toen Bill en Freddi Strauss zich in 1995 registreerden voor een unieke
+                                            website...
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-1">
+                <div class="p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex items-center justify-between mb-1">
+                        <h3 class="text-lg font-semibold font-ibm-plex-mono">
+                            Nieuwsbrief
+                        </h3>
+                        <div>
+                            <a href="https://computerclub.online/afleveringen"
+                               class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                                Inschrijven
                             </a>
                         </div>
                     </div>
@@ -332,22 +423,25 @@
             </div>
         </div>
     </main>
-    <footer class="fixed bottom-0 left-0 z-20 w-full bg-white border-t border-gray-200 shadow flex items-center justify-center p-4 dark:bg-gray-800 dark:border-gray-600">
-        <ul class="flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400">
+    <footer class="font-ibm-plex-mono fixed bottom-0 left-0 z-20 w-full bg-cc-blue border-t border-gray-200 shadow flex items-center justify-center p-4 dark:bg-gray-800 dark:border-gray-600">
+        <ul class="flex flex-wrap items-center text-sm font-medium text-white dark:text-gray-400">
             <li>
                 <a href="https://computerclub.online" class="hover:underline me-4 md:me-6">Site</a>
             </li>
             <li>
-                <a href="https://computerclub.online/shop" class="hover:underline me-4 md:me-6">Shop</a>
+                <a href="https://computerclub.mailcoach.app/telex" class="hover:underline me-4 md:me-6">Nieuwsbrief</a>
             </li>
             <li>
                 <a href="https://computerclub.forum/" class="hover:underline me-4 md:me-6">Forum</a>
             </li>
             <li>
-                <a href="https://computerclub.world/" class="hover:underline me-4 md:me-6">ComputerClub world</a>
+                <a href="https://computerclub.online/shop" class="hover:underline me-4 md:me-6">Shop</a>
             </li>
             <li>
-                <a href="https://computerclub.mailcoach.app/telex" class="hover:underline">Telex</a>
+                <a href="https://computerclub.online/vriend-van-de-show" class="hover:underline me-4 md:me-6">Vrienden</a>
+            </li>
+            <li>
+                <a href="https://computerclub.world/" class="hover:underline">World</a>
             </li>
         </ul>
     </footer>

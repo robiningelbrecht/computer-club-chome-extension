@@ -4,9 +4,9 @@ const response = await fetch('https://computerclub.forum/latest.json', {
 });
 const json = await response.json();
 
+// https://computerclub.mailcoach.app/feed/ad8001d0-bb6b-48d6-ba7d-eecbff10e010
 
-// https://computerclub.online/afleveringen/?format=rss
-const response2 = await fetch('https://feeds.soundcloud.com/users/soundcloud:users:473486739/sounds.rss', {
+const response2 = await fetch('https://computerclub.online/afleveringen/?format=rss', {
     method: "GET",
     cache: "no-cache",
 });
@@ -16,5 +16,4 @@ rss.querySelectorAll("item").forEach(el => {
     const url = el.querySelector("link").innerHTML;
     const description = el.querySelector("description").innerHTML;
     const pubDate = el.querySelector("pubDate").innerHTML;
-    const duration = el.querySelector("duration").innerHTML;
 });

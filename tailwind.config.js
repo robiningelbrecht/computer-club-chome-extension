@@ -6,6 +6,9 @@ module.exports = {
         "./node_modules/flowbite/**/*.js"
     ],
     theme: {
+        colors: {
+            'cc-blue': '#0F5CFA',
+        },
         extend: {
             fontFamily: {
                 'inter': ['"Inter"', 'sans-serif'],
