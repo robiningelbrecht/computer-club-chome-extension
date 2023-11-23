@@ -10,7 +10,7 @@
           rel="stylesheet">
 </head>
 <body class="bg-gray-50 dark:bg-gray-900">
-<div class="min-h-screen antialiased font-inter">
+<div class="min-h-screen xl:h-screen antialiased font-inter">
     <nav class="bg-cc-blue text-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
         <div class="flex flex-wrap items-center justify-between">
             <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -43,25 +43,48 @@
                         <div>
                             <a href="https://computerclub.forum"
                                class="text-sm font-medium text-cc-blue hover:underline dark:text-blue-500">
-                                alle berichten bekijken
+                                alle berichten
                             </a>
                         </div>
                     </div>
-                    <div class="mb-2 text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
-                        <ul class="flex flex-wrap -mb-px">
-                            <li class="me-2">
-                                <a href="#"
-                                   class="inline-block p-2 text-cc-blue border-b-2 border-cc-blue rounded-t-lg active dark:text-blue-500 dark:border-blue-500"
-                                   aria-current="page">Nieuwste</a>
-                            </li>
-                            <li class="me-2">
-                                <a href="#"
-                                   class="inline-block p-2 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Populair</a>
-                            </li>
-                        </ul>
-                    </div>
                     <div class="flow-root">
-                        <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                        <ul data-uses-template="forum-topic" role="list" class="h-[20rem] xl:h-[calc(100vh-15rem)] overflow-y-scroll divide-y divide-gray-200 dark:divide-gray-700">
+                            <template id="forum-topic">
+                                <li class="py-3 sm:py-3">
+                                    <a href="{{ link }}">
+                                        <div class="flex items-center gap-x-1">
+                                            <div class="flex-1 min-w-0">
+                                                <p class="mb-1 text-sm font-medium text-gray-900 truncate dark:text-white">
+                                                    {{ title }}
+                                                </p>
+                                                <div class="flex gap-x-1 items-center text-xs text-gray-500 truncate dark:text-gray-400">
+                                                    <img class="w-6 h-6 rounded-full"
+                                                         src="{{ originalPosterAvatar }}"
+                                                         alt="Avatar">
+                                                    <div>{{ originalPoster }}</div>
+                                                    <div>·</div>
+                                                    <div>{{ createdAt }}</div>
+                                                    <div>·</div>
+                                                    <div>{{ commentCount }} comments</div>
+                                                    <div>·</div>
+                                                    <div class="flex items-center">
+                                                        <span class="w-1 h-1 mr-[0.15rem]" style="background-color: #{{ categoryColor }}"></span>
+                                                        <span>{{ categoryName }}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-flex items-center">
+                                                {{ posters }}
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </template>
+                            <template id="forum-topic--poster">
+                                <img class="first:ml-0 -ml-2 w-6 h-6 rounded-full bg-white border border-gray-200 dark:border-gray-700"
+                                     src="{{ posterAvatar }}"
+                                     alt="Avatar">
+                            </template>
                             <li class="py-3 sm:py-3 animate-pulse">
                                 <div class="flex items-center gap-x-1">
                                     <div class="flex-1 min-w-0">
@@ -70,7 +93,7 @@
                                     </div>
                                     <div class="inline-flex items-center">
                                         <div class="text-gray-300 dark:text-gray-700">
-                                            <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                                  fill="currentColor" viewBox="0 0 20 20">
                                                 <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
                                             </svg>
@@ -86,7 +109,7 @@
                                     </div>
                                     <div class="inline-flex items-center">
                                         <div class="text-gray-300 dark:text-gray-700">
-                                            <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                                  fill="currentColor" viewBox="0 0 20 20">
                                                 <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
                                             </svg>
@@ -102,7 +125,7 @@
                                     </div>
                                     <div class="inline-flex items-center">
                                         <div class="text-gray-300 dark:text-gray-700">
-                                            <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                                  fill="currentColor" viewBox="0 0 20 20">
                                                 <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
                                             </svg>
@@ -118,7 +141,55 @@
                                     </div>
                                     <div class="inline-flex items-center">
                                         <div class="text-gray-300 dark:text-gray-700">
-                                            <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3 sm:py-3 animate-pulse">
+                                <div class="flex items-center gap-x-1">
+                                    <div class="flex-1 min-w-0">
+                                        <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-[90%] mb-2.5"></div>
+                                        <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                                    </div>
+                                    <div class="inline-flex items-center">
+                                        <div class="text-gray-300 dark:text-gray-700">
+                                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3 sm:py-3 animate-pulse">
+                                <div class="flex items-center gap-x-1">
+                                    <div class="flex-1 min-w-0">
+                                        <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-[90%] mb-2.5"></div>
+                                        <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                                    </div>
+                                    <div class="inline-flex items-center">
+                                        <div class="text-gray-300 dark:text-gray-700">
+                                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3 sm:py-3 animate-pulse">
+                                <div class="flex items-center gap-x-1">
+                                    <div class="flex-1 min-w-0">
+                                        <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-[90%] mb-2.5"></div>
+                                        <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                                    </div>
+                                    <div class="inline-flex items-center">
+                                        <div class="text-gray-300 dark:text-gray-700">
+                                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                                  fill="currentColor" viewBox="0 0 20 20">
                                                 <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
                                             </svg>
@@ -134,7 +205,7 @@
                                     </div>
                                     <div class="inline-flex items-center">
                                         <div class="text-gray-300 dark:text-gray-700">
-                                            <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                                  fill="currentColor" viewBox="0 0 20 20">
                                                 <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
                                             </svg>
@@ -160,7 +231,27 @@
                         </div>
                     </div>
                     <div class="flow-root">
-                        <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                        <ul data-uses-template="podcast-episode" role="list" class="h-[20rem] xl:h-[calc(100vh-15rem)] overflow-y-scroll divide-y divide-gray-200 dark:divide-gray-700">
+                            <template >
+                                <li class="py-3 sm:py-3">
+                                    <a href="{{ link }}">
+                                        <div class="mb-1 flex items-center justify-between">
+                                            <p class="flex-1 min-w-0 text-sm font-medium text-gray-900 truncate dark:text-white mr-1">
+                                                🎧 {{ title }}
+                                            </p>
+                                            <div class="text-xs text-gray-500 dark:text-gray-400">{{ date }}</div>
+                                        </div>
+                                        <div class="flex items-center gap-x-2">
+                                            <img class="w-16"
+                                                 src="{{ image }}"
+                                                 alt="Avatar">
+                                            <div class="h-[35px] text-ellipsis overflow-hidden">
+                                                {{ description }}
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </template>
                             <li class="py-3 sm:py-3 animate-pulse">
                                 <div class="mb-1 flex items-center justify-between">
                                     <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full mb-2.5"></div>
@@ -240,14 +331,34 @@
                             Nieuwsbrief
                         </h3>
                         <div>
-                            <a href="https://computerclub.online/afleveringen"
+                            <a href="https://computerclub.mailcoach.app/telex"
                                class="text-sm font-medium text-cc-blue hover:underline dark:text-blue-500">
-                                inschrijven
+                                alle nieuwsbrieven
                             </a>
                         </div>
                     </div>
                     <div class="flow-root">
-                        <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                        <ul data-uses-template="newsletter" role="list" class="h-[20rem] xl:h-[calc(100vh-15rem)] overflow-y-scroll divide-y divide-gray-200 dark:divide-gray-700">
+                            <template>
+                                <li class="py-3 sm:py-3">
+                                    <a href="{{ link }}">
+                                        <div class="mb-1 flex items-center justify-between">
+                                            <p class="flex-1 min-w-0 text-sm font-medium text-gray-900 truncate dark:text-white mr-1">
+                                                {{ title }}
+                                            </p>
+                                            <div class="text-xs text-gray-500 dark:text-gray-400">{{ date }}</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </template>
+                            <li class="py-3 sm:py-3 animate-pulse">
+                                <div class="mb-1 flex items-center justify-between">
+                                    <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full mb-2.5"></div>
+                                </div>
+                                <div class="flex items-center gap-x-1">
+                                    <div class="w-full h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                                </div>
+                            </li>
                             <li class="py-3 sm:py-3 animate-pulse">
                                 <div class="mb-1 flex items-center justify-between">
                                     <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full mb-2.5"></div>
@@ -317,91 +428,7 @@
         </ul>
     </footer>
 </div>
-<template id="forum-post">
-    <li class="py-3 sm:py-3">
-        <a href="#">
-            <div class="flex items-center gap-x-1">
-                <div class="flex-1 min-w-0">
-                    <p class="mb-1 text-sm font-medium text-gray-900 truncate dark:text-white">
-                        💡 Tips om het forum te volgen, met een zeer lange titel, ihihihi
-                    </p>
-                    <div class="flex gap-x-1 items-center text-xs text-gray-500 truncate dark:text-gray-400">
-                        <img class="w-6 h-6 rounded-full"
-                             src="https://computerclub.forum/user_avatar/computerclub.forum/freddy/64/6_2.png"
-                             alt="Neil image">
-                        <div>Freddy</div>
-                        <div>·</div>
-                        <div>20 nov</div>
-                        <div>·</div>
-                        <div>10 comments</div>
-                        <div>·</div>
-                        <div class="flex items-center before:inline-block before:content-[''] before:bg-[#0432ff] before:w-1 before:h-1 before:mr-[0.15rem]">
-                            Forum updates/feedback
-                        </div>
-                    </div>
-                </div>
-                <div class="inline-flex items-center">
-                    <img class="w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
-                         src="https://computerclub.forum/user_avatar/computerclub.forum/freddy/64/6_2.png"
-                         alt="Neil image">
-                    <img class="-ml-3 w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
-                         src="https://computerclub.forum//user_avatar/computerclub.forum/robin/64/49_2.png"
-                         alt="Neil image">
-                    <img class="-ml-3 w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
-                         src="https://computerclub.forum//user_avatar/computerclub.forum/robin/64/49_2.png"
-                         alt="Neil image">
-                    <img class="-ml-3 w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
-                         src="https://computerclub.forum//user_avatar/computerclub.forum/robin/64/49_2.png"
-                         alt="Neil image">
-                    <img class="-ml-3 w-8 h-8 rounded-full bg-white border border-gray-200 dark:border-gray-700"
-                         src="https://computerclub.forum//user_avatar/computerclub.forum/robin/64/49_2.png"
-                         alt="Neil image">
-
-                </div>
-            </div>
-        </a>
-    </li>
-</template>
-<template id="podcast-episode">
-    <li class="py-3 sm:py-3">
-        <a href="#">
-            <div class="mb-1 flex items-center justify-between">
-                <p class="flex-1 min-w-0 text-sm font-medium text-gray-900 truncate dark:text-white mr-1">
-                    #277 - Digidates en pindrukken
-                </p>
-                <div class="text-xs text-gray-500 dark:text-gray-400">20 nov</div>
-            </div>
-            <div class="flex items-center gap-x-1">
-                <img class="w-16"
-                     src="https://images.squarespace-cdn.com/content/v1/5ee79e74c6eadb5eab57c7f6/1700051024262-IBV0EHXDMT3TNHNI1VYV/277_dating_site.png?format=1500w">
-                <p>
-                    Toen Bill en Freddi Strauss zich in 1995 registreerden voor een unieke
-                    website...
-                </p>
-            </div>
-        </a>
-    </li>
-</template>
-<template id="newsletter">
-    <li class="py-3 sm:py-3">
-        <a href="#">
-            <div class="mb-1 flex items-center justify-between">
-                <p class="flex-1 min-w-0 text-sm font-medium text-gray-900 truncate dark:text-white mr-1">
-                    #277 - Digidates en pindrukken
-                </p>
-                <div class="text-xs text-gray-500 dark:text-gray-400">20 nov</div>
-            </div>
-            <div class="flex items-center gap-x-1">
-                <p>
-                    Toen Bill en Freddi Strauss zich in 1995 registreerden voor een unieke
-                    website...
-                </p>
-            </div>
-        </a>
-    </li>
-</template>
 <script src="dark-mode-toggle.js"></script>
-<script src="provider.js" type="module"></script>
+<script src="content.js" type="module"></script>
 </body>
 </html>
-</div>
