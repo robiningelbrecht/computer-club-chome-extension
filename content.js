@@ -70,7 +70,7 @@ getForumCategories().then(async categories => {
         $inner.innerHTML = $inner.innerHTML
             .replace("{{ title }}", topic.title)
             .replace('{{ createdAt }}', formatDate(new Date(topic.created_at)))
-            .replace('{{ link }}', 'https://computerclub.forum/t/' + topic.slug)
+            .replace('{{ link }}', 'https://computerclub.forum/t/' + topic.slug + '/' +topic.id + '/' +topic.highest_post_number )
             .replace('{{ commentCount }}', topic.posts_count - 1)
             .replace('{{ categoryName }}', category.name)
             .replace('{{ categoryColor }}', category.color)
