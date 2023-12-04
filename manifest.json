@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Computer Club: Start",
   "description": "Startpagina voor Computer Club, een podcast en nieuwsbrief en community over technologie.",
-  "version": "0.2",
+  "version": "0.3",
   "icons": {
     "16": "images/icon-16.png",
     "32": "images/icon-32.png",
